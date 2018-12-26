@@ -1,0 +1,21 @@
+{
+    "name": "Dom manipulatro",
+    "version": "1.0",
+    "description": "Will insert flutter icon at *.oursky.com if you go to that site",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/"
+            ],
+            "js": [
+                "jquery.js",
+                "main.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ]
+}
